@@ -1,0 +1,139 @@
+@font-face {
+    font-family: Pat;
+    src: url('/font/PatrickHandSC-Regular.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Pat;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.title{
+    background-color: #710100;
+    font-size: 40px;
+    color: #fff;
+    padding: 1rem;
+}
+
+.container{
+    position: flex;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #710100;      
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    width: 900px;
+    height: 1500px;
+    border-radius: 2.5rem;
+    background-color: #AF3A3A;
+    position: flex;
+    justify-content: space-between;
+}
+
+.title-info{
+    color: #fff;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1;
+    /* line-clamp: 1; */
+    margin: bottom 2.7rem;
+    padding: 1.5rem;
+}
+
+.row .col img{
+    width: 155px;
+    padding-left: 20px;
+    padding-top: 80px;
+}
+
+.row .col {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    line-height: 1.9;
+    padding-left: 25px;
+    /* margin-bottom: 225px;     */
+}
+
+.row .col input{
+    background-color: black;
+    display: inline-block;
+    position: relative;
+    padding: 0.8rem 2rem;
+    line-height: 1;
+    border-radius: 20px;
+    border-color: #fff;
+    font-size: 30px;
+    margin-left: 290px;
+    
+         
+}
+
+.row .col input:hover{
+    background-color: #ffffff;
+    border-color:  rgb(0, 0, 0);
+    border: solid;
+    color: rgb(3, 0, 0);
+    font-weight: 500;
+   
+}
+
+ input{
+    background-color: black;
+    display: inline-block;
+    position: relative;
+    padding: 0.8rem 2rem;
+    line-height: 1;
+    border-radius: 20px;
+    border-color: #fff;
+    font-size: 30px;
+    margin-left: 290px;
+    /* position: center; */
+    margin-right: 10px;
+    margin-top: 135px;
+    float: right;
+         
+}
+
+input:hover{
+    background-color: #ffffff;
+    border-color:  rgb(0, 0, 0);
+    border: solid 3px;
+    color: rgb(3, 0, 0);
+    font-weight: 500;
+   
+}
+
+@media (max-width : 850px){
+    .title{
+        font-size: 40px;
+    }
+    .container{
+        padding: 1.5rem;
+    }
+    .info-title{
+        font-size: 30px;
+    }
+    .row .col img{
+        max-width: 145px;
+    }
+    .row .col{
+        display: inline-block;
+        position: relative;
+        font-size: 25px;
+        line-height: 1.9;
+        padding-left: 25px;
+    }
+    input{
+        
+    }
+}

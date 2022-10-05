@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanBam</title>
+    <link rel="stylesheet" href="costyle.css">
+    <script>
+        function Total(qty,ud,total,value){
+            qty=document.getElementById(qty);
+            ud>0?qty.value++:qty.value--;
+            qty.value=Math.max(qty.value,0);
+            document.getElementById(total).value=qty.value*value;
+        }
+
+        function pay(){
+            alert('Thank You');
+        }
+    </script>
+<body>
+    <div class="navbar">
+        <a><img src="img/logo2.png" alt=""></a>
+        <a href="index.html">Home</a>
+        <a href="Contact Us Aslab/contactus.html">Menu</a>
+        <a href="About Us/About us.html">About Us</a>
+        <a href="Location aslab/loc.html">Location</a>
+        <div class="login">
+          <a href="Registration & login/Regis.html"><button class="button1 buttonlogin">Login</button></a>
+          <a href="Registration & login/Regis.html"><button class="button2 buttonregis">Register</button></a>
+        </div>
+    </div>
+
+        <div>
+          <div class="judul">Checkout...</div>
+        </div>
+
+        <br><br><br>
+
+        <div>
+          <div class="box">
+            <div class="deliver">
+                <p>Deliver To</p>
+                <div class="box1">
+                    <div class="loc">
+                        <p class="alamat">
+                          <img src="img/location.png">
+                          HOME <br><br> Jalan Penggansaan Timur
+                          </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="orderqty">
+                <p>Order Quantity</p>
+                <div class="box2">
+                    <div class="slider-vertical"></div>
+                    <div id="purhcaseForm">
+                         <form id="purchase">
+                             <br> Item Price: 25 K
+                             <br> Please Select Quantity
+                             <input type='button' name='subtract' onclick='Total("qty",-1,"total",25000);' value='-'/>
+                             <input type='button' name='add' onclick='Total("qty",1,"total",25000);' value='+'/>
+                             <input type='text' name='qty' id='qty' readonly=true value="0"/>
+                             <input type='text' name='total' id='total' value="0" />
+                          </form>
+                    </div>
+                </div>
+
+                
+            </div>
+            
+
+            <div class="payment">
+                <div class="deliver">
+                    <p>Payment</p>
+                    <div class="box1">
+                        <div class="loc">
+                            <p class="alamat">
+                              <img src="img/gopay.png">
+                              </p>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>  
+            <br><br><br>
+            <button class="button button4" onclick="pay()">Pay</button>
+          </div>
+        </div>
+
+
+
+     <!-- <script>
+        //  function increaseCount(a, b) {
+        //     var input = b.previousElementSibling;
+        //     var value = parseInt(input.value, 10);
+        //     value = isNaN(value) ? 0 : value;
+        //     value++;
+        //     input.value = value;
+        //     }
+
+        //     function decreaseCount(a, b) {
+        //     var input = b.nextElementSibling;
+        //     var value = parseInt(input.value, 10);
+        //     if (value > 1) {
+        //         value = isNaN(value) ? 0 : value;
+        //         value--;
+        //         input.value = value;
+        //     }
+        // }
+
+        // $(document).ready(function(){
+        //     $(".checkout").on("keyup", ".quantity", function(){
+        //         var price = +$(".price").data("price");
+        //         var quantity = +$(this).val();
+        //         $("#total").text("$" + price * quantity);
+        //     })
+        // })
+     </script> -->
+</body>
+
+<footer>
+  <div class="row">
+    <div class="column">
+      <img src="img/logo2.png" alt="Snow" style="width:80%;border-radius: 100px;">
+      <br>
+    </div>
+    <div class="column">
+      <p>
+        Powered by
+      </p>
+      <img src="img/gojeklogo.png" alt="Forest" style="width:80%;border-radius: 100px;">
+      <br>
+    </div>
+    <div class="row3">
+      <p><a href="#ContactUs">Contact Us</a></p>
+      <p><a href="#gmail">danbam@gmail.com</a></p>
+      <p><a href="#Phone">Phone : 0812-3456-7890</a></p>
+      <br>
+    </div>
+  </div>
+  <hr />
+
+ <div class="sosmed">
+  <img src="img/twitter.png" alt="">
+  <img src="img/ig.png" alt="">
+  <img src="img/fb.png" alt="">
+  <img src="img/gmail.png" alt="">
+ </div>
+ <div class="txt">
+   <p>&copy;DanBam, Inc. 2019. We love our customers!</p>
+ </div>
+</footer>
+
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanBam</title>
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+    <!-- <div class="navbar">
+        <a><img src="img/logo2.png" alt=""></a>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="mainmenubtn">Menu</button>
+          <div class="dropdown-child">
+            <a href="Recomen/recomen.html">Recomendation</a>
+            <a href="Menu List/Menu list.html">Menu List</a>
+            <a href="http://wwww.yourdomain.com/page3.html">Sub Menu 3</a>
+            <a href="http://wwww.yourdomain.com/page4.html">Sub Menu 4</a>
+            <a href="http://wwww.yourdomain.com/page5.html">Sub Menu 5</a>
+            <a href="http://wwww.yourdomain.com/page5.html">Sub Menu 6</a>
+          </div>
+        </div>
+        <a href="About Us/About us.html">About Us</a>
+        <a href="Location aslab/loc.html">Location</a>
+        <div class="login">
+          <a href="Registration & login/Regis.html"><button class="button1 buttonlogin">Login</button></a>
+          <a href="Registration & login/Regis.html"><button class="button2 buttonregis">Register</button></a>
+        </div>
+    </div> -->
+    <div class="navbar">
+      <a><img src="img/logo2.png" alt=""></a>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Menu 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="Recomen/recomen.html">Recomendation</a>
+          <a href="Menu List/Menu list.html">Menu List</a>
+          <a href="Lunch box aslab/lunch.html">Lunchbox</a>
+          <a href="Drink/drinkl.html">Drinks</a>
+          <a href="Dessert/dessert.html">Dessert</a>
+          <a href="Snack/snacks.html">Snacks</a>
+        </div>
+      </div> 
+      <a href="About Us/About us.html">About Us</a>
+      <a href="Location aslab/loc.html">Location</a>
+      <div class="login">
+        <a href="Registration & login/Regis.html"><button class="button1 buttonlogin">Login</button></a>
+        <a href="Registration & login/Regis.html"><button class="button2 buttonregis">Register</button></a>
+      </div>
+    </div>
+    
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img/car1.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img/car2.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img/car3.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+      </div>
+
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <br><br><br>
+
+        <div>
+          <div class="judul">DanBam
+            <div class="content">Danbam Restaurant is a place for us to taste Korean food with<br>authentic flavors.  In this web you’ll have an experience order food<br>with a simple way and the fastest way.</div>
+          </div>
+        </div>
+
+        <br><br><br>
+
+        <div>
+          <div class="menurecomendation">Menu Recomendation</div>
+        </div>
+
+        <br><br><br>    
+
+      <div class="row">
+        <div class="column">
+          <img src="img/mak1.jpg" alt="Snow" style="width:60%;border-radius: 100px;">
+          <br>
+          <p>
+            Gochujang<br>Chicken
+          </p>
+          <a href="checkout.html"><button class="button">Order</button></a>
+        </div>
+        <div class="column">
+          <img src="img/mak2.jpg" alt="Forest" style="width:60%;border-radius: 100px;">
+          <br>
+          <p>
+            Itaewon<br>Japchae
+          </p>
+          <a href="checkout.html"><button class="button">Order</button></a>
+        </div>
+        <div class="column">
+          <img src="img/mak3.jpg" alt="Mountains" style="width:60%;border-radius: 100px;">
+          <br>
+          <p>
+            Itaewon<br>Hotteok
+          </p>
+          <a href="checkout.html"><button class="button">Order</button></a>
+        </div>
+      </div>
+
+      <br><br><br>
+
+      <div class="loc">
+        <div class="location">Location</div>
+        <br>
+        <p class="alamat">
+          <img src="img/location.png">
+          Prambanan Street Block C3 Number 2
+          </p>
+      </div>
+
+      <br>
+
+      <div class="gambartoko">
+        <img src="img/location3.jpg" style="display:block; margin:auto; width: 800px; height: 400px; border-radius: 70px;">
+      </div>
+
+      <br><br><br><br><br><br><br><br>
+
+
+      
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+     
+</body>
+
+<footer>
+  <div class="row">
+    <div class="column">
+      <img src="img/logo2.png" alt="Snow" style="width:80%;border-radius: 100px;">
+      <br>
+    </div>
+    <div class="column">
+      <p>
+        Powered by
+      </p>
+      <img src="img/gojeklogo.png" alt="Forest" style="width:80%;border-radius: 100px;">
+      <br>
+    </div>
+    <div class="row3">
+      <p><a href="#ContactUs">Contact Us</a></p>
+      <p><a href="#gmail">danbam@gmail.com</a></p>
+      <p><a href="#Phone">Phone : 0812-3456-7890</a></p>
+      <br>
+    </div>
+  </div>
+  <hr />
+
+ <div class="sosmed">
+  <img src="img/twitter.png" alt="">
+  <img src="img/ig.png" alt="">
+  <img src="img/fb.png" alt="">
+  <img src="img/gmail.png" alt="">
+ </div>
+ <div class="txt">
+   <p>&copy;DanBam, Inc. 2019. We love our customers!</p>
+ </div>
+</footer>
+
+</html>

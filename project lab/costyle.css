@@ -1,0 +1,387 @@
+@font-face {
+    font-family: Pat;
+    src: url(font/PatrickHandSC-Regular.ttf);
+}
+
+*{
+    font-family: Pat;
+}
+  
+  
+body {
+      font-family: pat;
+      margin: 0;
+      background-color: #710100;
+  }
+  
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    background-image: url("img/menubg.jpeg");
+}
+  
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+.navbar img{
+      width: 100px;
+      height: 50px;
+}
+
+.button1{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid #f44336;
+    margin-left: 100px;
+    margin-top: -100px;
+}
+
+.buttonlogin{
+    border-radius: 12px;
+}
+
+.button2{
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid #f44336;
+    margin-top: -100px;
+    margin-right: 200px;
+}
+
+}
+
+.buttonregis{
+    border-radius: 12px;
+}
+
+/* carousel */
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.judul{
+  padding-top: -50px;
+  text-align: left;
+  font-size: 40px;
+  color: white;
+  margin-left: 3%;
+  padding-top: 50px;
+}
+
+.judul .content{
+  font-size: 20px;
+  color: #f2f2f2;
+}
+
+.menurecomendation{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+  border: 2px solid white;
+}
+
+button:hover {
+  background-color: white;
+  color: white;
+}
+
+.button {
+  display: inline-block;
+  padding: 20px 80px;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline-color: white;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius:100px;
+  border: 4px solid white;
+}
+  
+.button:hover {
+  background-color: gray
+}
+  
+.button:active {
+  background-color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.location{
+  color: white;
+  font-size: 40px;
+}
+
+.alamat{
+  color: white;
+}
+
+.loc img{
+  height: 20px;
+  width: 20px;
+}
+
+footer .row3 a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer img{
+    width: 100px;
+    height: 50px;
+}
+
+footer{
+  background-color: #2A231C;
+  padding: 70px 10px;
+  padding-top: 10px;
+
+}
+
+footer .imglogofoot .gojek{
+  padding-left: 650px;
+  padding-top: 10px;
+  padding: -500px 90px;
+}
+
+footer .column{
+  font-size: 15px;
+}
+
+footer .row3{
+  color: white;
+  text-align: right;
+  padding-right: 100px;
+  padding-top: 10px;
+}
+
+footer .row3 p a{
+  font-size: 13px;
+}
+
+.sosmed {
+  margin-left: 600px;
+}
+
+.txt {
+  margin-left: 500px;
+  color: white;
+}
+
+.box{
+    background-color: #c2403e;
+    width: 1460px;
+    height: 1000px;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.box1{
+    background-color: white;
+    width: 500px;
+    height: 100px;
+    padding: 50px;
+    border-radius: 100px;
+}
+/* 
+.box3{
+    background-color: white;
+    width: 500px;
+    height: 80px;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 100px;
+} */
+
+.counter {
+    width: 150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.counter input {
+    width: 50px;
+    border: 0;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    background: #ebebeb;
+    color: rgb(0, 0, 0);
+    appearance: none;
+    outline: 0;
+}
+.counter span {
+    display: block;
+    font-size: 25px;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #f2f6fd;
+    user-select: none;
+}
+
+.checkout {
+	height: 300px;
+	width: 400px;
+	margin: 20px auto;
+	border: 2px solid black;
+	text-align: center;
+}
+
+.row-heading
+{
+  font-size:1.3rem;
+  font-weight:bold;
+}
+.total
+{
+  font-size:2rem;
+  font-weight:bold;
+}
+.total-val
+{
+  font-size:2rem;
+}
+
+.location{
+    color: white;
+    font-size: 40px;
+  }
+  
+.alamat{
+    color: black;
+}
+  
+  .loc img{
+    height: 20px;
+    width: 20px;
+  }
+
+  .loc{
+    padding: -90px 10px;
+    margin: 10px;
+    margin-bottom: 10px;
+    margin-top: -50px;
+  }
+
+  .gpy{
+    padding-top: -1000px;
+    background-color: white;
+    width: 500px;
+    height: 80px;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 100px;
+  }
+
+.payment .loc img{
+    height: 150px;
+    width: 200px;
+    margin-left: 90px;
+    margin-bottom: 100px;
+    margin-top: -40px;
+  }
+
+  .deliver p{
+      color: white;
+  }
+
+  .orderqty{
+      color: white;
+  }
+
+  .deliver .loc p{
+      color: black;
+  }
+
+  button {
+    padding: 9px 25px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    border: 2px solid white;
+  }
+  
+  button:hover {
+    background-color: white;
+    color: white;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 20px 80px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline-color: white;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius:100px;
+    border: 4px solid white;
+    margin-left:500px;
+  }
+    
+  .button:hover {
+    background-color: gray
+  }
+    
+  .button:active {
+    background-color: white;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
